@@ -19,7 +19,7 @@ import {
   useGetCryptoDetailsQuery,
   useGetCryptoHistoryQuery,
 } from "../services/CryptoApi";
-// import Loader from './Loader';
+import Loader from './Loader';
 import LineChart from "./Linechart";
 
 const { Title, Text } = Typography;
@@ -35,7 +35,7 @@ const CryptoDetails = () => {
   });
   const cryptoDetails = data?.data?.coin;
 
-  if (isFetching) return "sanjheev";
+  if (isFetching) return <Loader />;
 
   const time = ["24h", "7d", "30d", "1y"];
 
