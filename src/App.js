@@ -10,6 +10,8 @@ import {
   News,
 } from "./components";
 import "./App.css";
+import {LinkedinOutlined,
+    YoutubeOutlined  } from '@ant-design/icons'
 const App = () => {
   return (
     <div className="app">
@@ -40,14 +42,17 @@ const App = () => {
         </Layout>
 
         <div className="footer">
-          <Typography.Title styles={{ color: "white", textAlign: "center" }}>
+          <Typography.Title level={1} styles={{ color: "white", textAlign: "center" }}>
             CryptoViewer <br />
-            All right reserved
           </Typography.Title>
           <Space>
             <Link to="/">Home</Link>
             <Link to="/exchanges">Exchange</Link>
             <Link to="/news">News</Link>
+            
+          </Space>
+          <Space>
+          <p style={{color:"white"}}>Created By <Link to={{ pathname: "https://www.linkedin.com/in/sanjheev-r-505377198/" }} target="_blank" > <LinkedinOutlined /> </Link> Insipired from <Link to={{pathname:"https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A" }} target="_blank" > <YoutubeOutlined /></Link></p>
           </Space>
         </div>
       </div>

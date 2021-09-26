@@ -12,7 +12,7 @@ import {
 import moment from "moment";
 import { useGetCryptoNewsQuery } from "../services/CryptoNewsApi";
 import { useGetCryptosQuery } from "../services/CryptoApi";
-
+import Loader from './Loader'
 const { Text, Title } = Typography;
 const { Option } = Select;
 
@@ -26,7 +26,6 @@ const News = ({ simplified }) => {
   const { data: cryptoNews } = useGetCryptoNewsQuery(newsCategory, {
     count: simplified ? 6 : 12,
   });
-  console.log(cryptoNews);
 
   if (!cryptoNews?.value) return <Loader />;
 
