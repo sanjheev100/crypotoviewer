@@ -3,7 +3,6 @@ import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
 import { useGetCryptosQuery } from "../services/CryptoApi";
-import { ConsoleSqlOutlined } from "@ant-design/icons";
 import { Cryptocurrencies, News } from "../components";
 import Loader from "./Loader";
 

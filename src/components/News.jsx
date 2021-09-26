@@ -1,20 +1,16 @@
 import React, { useState } from "react";
 import {
-  Select,
-  Typrography,
   Row,
   Col,
   Avatar,
   Card,
   Typography,
-  Input,
 } from "antd";
 import moment from "moment";
 import { useGetCryptoNewsQuery } from "../services/CryptoNewsApi";
 import { useGetCryptosQuery } from "../services/CryptoApi";
 import Loader from './Loader'
 const { Text, Title } = Typography;
-const { Option } = Select;
 
 const demoimage =
   "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
