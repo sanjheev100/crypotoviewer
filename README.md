@@ -1,3 +1,5 @@
+**React App to fetch details about current cryptocurrenncy rate and news realted to cryptocurrency using RAPIDAPI **
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
